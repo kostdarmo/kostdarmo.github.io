@@ -47,6 +47,7 @@
         <h2 class="text-4xl md:text-5xl tracking-wide !leading-normal mb-4">Fasilitas di<br>Kost Darmo apa saja?</h2>
         <ul class="md:text-2xl italic font-medium !leading-relaxed">
           <li>Termasuk cuci pakaian</li>
+          <li>AC</li>
           <li>Kamar mandi (dalam / luar)</li>
           <li>Ada yang khusus untuk wanita</li>
           <li>WiFi</li>
