@@ -5,16 +5,10 @@
 @tailwind utilities;
 
 /* Color palette
-#fc9e6b, #feb55c,##fb7f3b,#d53d07
-#fee8ce,#e04a00
-*/
-
-/* Colours Jana
-#484349, #839788, #eee0cb, #3f84e5, #fe654f
-*/
-
-/* Colours Justyna
-#315D93, #817c52, #dacfc3, #fca806, #f27984
+#CFFFB3
+#ADE25D
+#3B7080
+#3A5743
 */
 
 @layer base {
@@ -25,7 +19,7 @@
 	}
 
 	html::-webkit-scrollbar-track {
-		background: linear-gradient(0deg, rgba(252, 168, 6, 1) 0%, rgba(242, 121, 132, 1) 100%);
+		background: linear-gradient(0deg, #CFFFB3 0%, #3B7080 100%);
 	}
 
 	html::-webkit-scrollbar-thumb {
@@ -38,9 +32,9 @@
 		font-size: 16px;
 		font-family: 'Playfair Display', serif;
 		--color-text: #000;
-		--color-bg: #e9e9e1;
-		--color-link: #f27984;
-		--color-link-hover: #fca806;
+		--color-bg: #CFFFB3;
+		--color-link: #3A5743;
+		--color-link-hover: #3B7080;
 		--page-padding: 1rem;
 		--columns: 15;
 		--cursor-blend-mode: difference;
@@ -60,15 +54,6 @@
 		font-family: Abril Fatface;
 	}
 
-	.content a {
-		@apply text-[#817c52] ;
-	}
-
-	.content a:hover {
-		@apply underline underline-offset-8 decoration-dotted;
-
-	}
-
 	*,
 	*::after,
 	*::before {
@@ -76,69 +61,9 @@
 	}
 }
 
-
 nav, footer, .worksans {
 	font-family: 'Work Sans';
 }
-
-/* START: FX header */
-.home-fx {
-	--cursor-bg: #901ee9;
-	--gradient-text-1: #000;
-	--gradient-text-2: rgb(94 85 147);
-	--cursor-radius: 50%;
-	--cursor-blend-mode: color-burn;
-}
-
-.home-fx:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-image: url("/images/bg7.jpg");
-	opacity: 0.44;
-}
-
-.cursor {
-	height: 100%;
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;
-	pointer-events: none;
-	z-index: 99;
-	mix-blend-mode: var(--cursor-blend-mode);
-	--size: calc(100vw / var(--columns));
-}
-
-.cursor__inner {
-	display: grid;
-	grid-template-columns: repeat(var(--columns), var(--size));
-}
-
-.cursor__inner-box {
-	width: var(--size);
-	height: var(--size);
-	background: var(--cursor-bg);
-	opacity: 0;
-	border-radius: var(--cursor-radius);
-}
-
-@media screen and (min-width: 53em) {
-	:root {
-		--columns: 30;
-		--page-padding: 2rem;
-	}
-	.frame {
-		grid-template-columns: auto auto auto 1fr;
-		grid-template-areas: 'title prev sponsor demos';
-		justify-items: start;
-		grid-gap: 2rem;
-	}
-}
-/* END: FX header */
 
 /* Page Loader */
 .loading::before,
@@ -177,30 +102,18 @@ nav, footer, .worksans {
 
 @layer components {
 	.button {
-		@apply inline-block px-4 py-3 md:px-6 bg-gradient-to-r from-cyan-950 to-cyan-800 rounded-full !text-white hover:bg-gradient-to-r hover:from-orange-950 hover:to-emerald-800 worksans uppercase tracking-wide;
+		@apply inline-block px-4 py-3 md:px-6 bg-gradient-to-r from-[#CFFFB3] to-[#afe192] rounded-full !text-[#3A5743] hover:bg-[#CFFFB3] worksans font-medium uppercase tracking-wide;
 	}
 
-	.menunav--hidden .menunav__target {
-		@apply invisible w-0 h-0 lg:visible lg:w-auto lg:h-auto;
+	.hero:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		background-image: url("/images/Kost_Darmo_luar.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.44;
 	}
-
-	.menunav--hidden .fa-xmark {
-		@apply invisible w-0 h-0;
-	}
-
-	.menunav--expanded .menunav__target {
-		@apply visible w-full absolute top-[60px] left-0 lg:block lg:w-auto lg:relative;
-	}
-
-	.menunav--expanded .menunav__target > a {
-		@apply block;
-	}
-
-	.menunav--expanded .fa-bars {
-		@apply invisible w-0 h-0;
-	}
-}
-
-.rotate-90 {
-	transform: rotate(90deg);
 }

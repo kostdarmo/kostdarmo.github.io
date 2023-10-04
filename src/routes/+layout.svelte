@@ -2,7 +2,6 @@
 <script>
 	import "../app.css";
 	import { onMount } from 'svelte';
-	import Nav from "./Nav.svelte";
 	onMount(() => {
 		document.getElementById('isMain')?.classList.remove('loading');
 	});
@@ -14,8 +13,6 @@
 </svelte:head>
 
 <div id="isMain" class="loading">
-	<Nav></Nav>
-
 	<section class="content">
 		<slot />
 	</section>
