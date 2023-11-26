@@ -5,6 +5,13 @@ The project is built using Svelte + SvelteKit.
 ## GitHub
 [Kost Darmo GitHub](https://github.com/kostdarmo/kostdarmo.github.io).
 
+## Localhost
+Make sure to use the right npm
+> nvm use v18.17.1
+
+When ready, run dev to view the project locally:
+> npm run dev
+
 
 ## Deployment
 Run `npm run gh-pages` and check the latest build & deployment, here:

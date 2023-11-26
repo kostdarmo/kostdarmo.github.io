@@ -10,6 +10,10 @@
           <h1 class="text-6xl md:text-8xl tracking-wide my-4 md:py-6 lg:my-9">Kost Darmo Surabaya</h1>
           <p class="md:text-2xl italic font-medium !leading-relaxed">Kost Darmo dengan tarif yang terjangkau, merupakan pilihan sempurna bagi para pekerja yang berlokasi di Surabaya Barat.</p>
           <p class="md:text-2xl italic font-medium !leading-relaxed my-4">Harga mulai dari <strong>Rp 850.000,-</strong> per bulan!</p>
+          <div class="bg-rose-300 border-l-4 border-l-rose-700 px-6 pt-3 pb-4 italic rounded-md text-rose-900 inline-block">
+            Kami tidak bekerja dengan pihak ketiga mana pun.<br>
+            Jika berminat, silahkan <a href="#kontak" class="underline underline-offset-4 decoration-solid hover:decoration-dashed">langsung menghubungi kami</a>.
+          </div>
           <ul class="my-4 md:py-6 lg:my-9 flex md:justify-center gap-4">
             <li><a href="#info" class="button">Info lebih lanjut</a></li>
             <li><a href="#kontak" class="button">Hubungi kami</a></li>
