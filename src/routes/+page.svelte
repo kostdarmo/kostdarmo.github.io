@@ -73,6 +73,10 @@
     <div class="py-6 md:py-11 lg:py-20 bg-gradient-to-br from-[#e9fcde] to-[#bcdfa7]" id="kontak">
       <div class="px-4 md:text-center md:max-w-3xl mx-auto">
         <h2 class="text-4xl md:text-5xl tracking-wide !leading-normal mb-4">Hubungi kami</h2>
+        <div class="bg-rose-300 border-l-4 border-l-rose-700 px-6 pt-3 pb-4 italic rounded-md text-rose-900 inline-block mb-4">
+          Kami tidak bekerja dengan pihak ketiga mana pun.<br>
+          Jika berminat, silahkan <a href="#kontak" class="underline underline-offset-4 decoration-solid hover:decoration-dashed">langsung menghubungi kami</a>.
+        </div>
         <ul class="md:text-2xl italic font-medium !leading-relaxed flex gap-4 md:justify-center">
           <li>
             <a class="px-6 py-2 hover:bg-[#3A5743] hover:text-emerald-50 group rounded-full bg-white inline-block mt-4" target="_blank" href="https://wa.me/+6285106123088">
